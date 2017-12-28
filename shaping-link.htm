@@ -1,0 +1,16 @@
+<html>
+<body>
+<script src="dist/vivus.js"></script>
+<object type="image/svg+xml" data="shaping-toanim-plain.svg" class="" id="svg2">
+</object>
+
+<script>
+	var hi = new Vivus('svg2', {type: 'scenario-sync', duration: 10, start: 'autostart', dashGap: 20, forceRender: false},
+		function () {
+			if (window.console) {
+				console.log('Animation finished. [log triggered from callback]');
+			}
+		})
+</script>
+</body>
+</html>
